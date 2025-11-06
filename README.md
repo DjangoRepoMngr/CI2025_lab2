@@ -134,10 +134,10 @@ Lower **best\_cost** is better (negative values are possible in `r2_*`). The tab
 
 ## **If you want ES to close the gap:** increase generations and/or λ/μ, enable a light **2‑opt local polish** per offspring, and tune mutation rate. Those changes typically improve ES results on permutation problems.
 
-### Glossary (quick)
+---
+### Acknowledgements / Ethical Note
 
-- **best\_cost**: objective value (lower is better; can be negative in `r2_*`).
-- **sweep (2‑opt)**: one pass of trying many 2‑opt swaps; stop when a sweep finds no improvement.
-- **(μ+λ)**: choose survivors from **parents + offspring** (elitist).
-- **(μ,λ)**: choose survivors from **offspring only** (non‑elitist).
+I got some high–level ideas and inspiration by reading the README of **Federico Carollo**’s public CI2025 Lab2 GitHub repository.  
+I did **not** copy his code — I only read his explanations and reasoning to understand general approaches.
 
+I also used AI models to help me reason about design decisions, code structure, documentation formatting and to optimize some parts of my implementation. Some ideas were mine, some AI suggested improvements, but the final design choices and implementation were decided by me.
